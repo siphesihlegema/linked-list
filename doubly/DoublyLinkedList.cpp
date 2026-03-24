@@ -26,5 +26,12 @@ int main() {
         std::cout << current->data << " ";
         current = current->next; //move to the pointer of next node
     }
+    
+    // backward transvers
+    Node* current2 = node4;      // last node
+    while (current2 != nullptr) {
+        std::cout << current2->data << " ";
+        current2 = current2->prev;  // Jump backward via prev
+    }
 }
 
